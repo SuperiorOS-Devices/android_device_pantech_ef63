@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from ef63 device
 $(call inherit-product, device/pantech/ef63/ef63.mk)
 
-# Inherit some common DotOS stuff.
+# Inherit some common Superior stuff.
 $(call inherit-product, vendor/superior/config/common.mk)
 
 # Call the proprietary setup
@@ -36,9 +36,9 @@ TARGET_VENDOR := PANTECH
 TARGET_VENDOR_PRODUCT_NAME := ef63
 TARGET_VENDOR_DEVICE_NAME := ef63
 
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="ef63-user 6.0.1 MHC19Q ZNH2KAS1KN release-keys" 
 
 BUILD_FINGERPRINT := pantech/ef63:6.0.1/MHC19Q/ZNH2KAS1KN:user/release-keys
 
-SUPERIOR_OFFICIAL := true
